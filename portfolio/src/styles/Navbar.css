@@ -1,0 +1,24 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color: #ffaf7b;
+}

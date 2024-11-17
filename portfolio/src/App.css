@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.App {
+  background: linear-gradient(135deg, #2c1a5b, #1f0d3d, #470b72);
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

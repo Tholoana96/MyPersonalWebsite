@@ -1,0 +1,31 @@
+#skills {
+  padding: 60px 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-item {
+  background: rgba(0, 0, 0, 0.3);
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-name {
+  background: linear-gradient(135deg, #d76d77, #ffaf7b);
+  height: 100%;
+  line-height: 30px;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  white-space: nowrap;
+}
