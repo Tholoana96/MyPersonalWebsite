@@ -1,58 +1,119 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import "../styles/Projects.css";
+import pizzaImg from "../images/pizza.png";
+import learnImg from "../images/learn.png";
+import weatherImg from "../images/weather.png";
+import recipeImg from "../images/recipe.png";
+import gameImg from "../images/game.png";
+import musicImg from "../images/music.png";
+import commerceImg from "../images/commerce.png";
 
 const projects = [
   {
-    title: "SliceHub",
-    description: "A pizza delivery app with a modern UI.",
-    link: "#",
+    id: 1,
+    title: "Project One",
+    image: pizzaImg,
+    description: "This is a description of project one.",
+    liveDemo: "https://live-demo-link1.com",
+    code: "https://github.com/example/project-one",
   },
   {
-    title: "Letter Leap",
-    description: "Interactive letter-learning game for kids.",
-    link: "#",
+    id: 2,
+    title: "Project Two",
+    image: learnImg,
+    description: "This is a description of project two.",
+    liveDemo: "https://live-demo-link2.com",
+    code: "https://github.com/example/project-two",
   },
   {
-    title: "Weather App",
-    description: "A weather forecasting app using APIs.",
-    link: "#",
+    id: 3,
+    title: "Project Three",
+    image: weatherImg,
+    description: "This is a description of project three.",
+    liveDemo: "https://live-demo-link3.com",
+    code: "https://github.com/example/project-three",
   },
   {
-    title: "Recipe Generator",
-    description: "Discover recipes based on available ingredients.",
-    link: "#",
+    id: 4,
+    title: "Project Four",
+    image: recipeImg,
+    description: "This is a description of project four.",
+    liveDemo: "https://live-demo-link4.com",
+    code: "https://github.com/example/project-four",
+  },
+  {
+    id: 5,
+    title: "Project Five",
+    image: gameImg,
+    description: "This is a description of project five.",
+    liveDemo: "https://live-demo-link5.com",
+    code: "https://github.com/example/project-five",
+  },
+  {
+    id: 6,
+    title: "Project Six",
+    image: musicImg,
+    description: "This is a description of project six.",
+    liveDemo: "https://live-demo-link6.com",
+    code: "https://github.com/example/project-six",
+  },
+  {
+    id: 7,
+    title: "Project Seven",
+    image: commerceImg,
+    description: "This is a description of project seven.",
+    liveDemo: "https://live-demo-link7.com",
+    code: "https://github.com/example/project-seven",
   },
 ];
 
 function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
-    <section id="projects">
-      <motion.h2
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Projects
-      </motion.h2>
+    <section id="projects" className="projects">
+      <h2 className="section-title">My Projects</h2>
       <div className="projects-grid">
-        {projects.map((project, index) => (
-          <motion.div
+        {projects.map((project) => (
+          <div
+            key={project.id}
             className="project-card"
-            key={index}
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            whileHover={{ scale: 1.05 }}
+            onClick={() => setSelectedProject(project)}
           >
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </motion.div>
+            <img src={project.image} className="project-image" alt="" />
+          </div>
         ))}
       </div>
+      {selectedProject && (
+        <div className="project-modal" onClick={() => setSelectedProject(null)}>
+          <div
+            className="project-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img src={selectedProject.image} className="modal-image" alt="" />
+            <h3>{selectedProject.title}</h3>
+            <p>{selectedProject.description}</p>
+            <div className="modal-links">
+              <a
+                href={selectedProject.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-link"
+              >
+                Live Demo
+              </a>
+              <a
+                href={selectedProject.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-link"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

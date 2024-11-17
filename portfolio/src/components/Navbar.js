@@ -22,11 +22,6 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
           <Link to="contact" smooth duration={500}>
             Contact
           </Link>

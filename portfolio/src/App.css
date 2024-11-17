@@ -6,10 +6,8 @@ body {
 }
 
 .App {
-  background: linear-gradient(135deg, #2c1a5b, #1f0d3d, #470b72);
-  background-size: 300% 300%;
-  animation: gradientAnimation 15s ease infinite;
-  min-height: 100vh;
+  background: url(images/stars.jpg);
+  background-size: contain;
 }
 
 @keyframes gradientAnimation {
