@@ -5,6 +5,11 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
 .App {
   background: url(images/stars.jpg);
   background-size: contain;

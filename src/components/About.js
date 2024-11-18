@@ -1,6 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/About.css";
+import htmlIcon from "../images/icons/html-5.png";
+import cssIcon from "../images/icons/css-3.png";
+import javascriptIcon from "../images/icons/java-script.png";
+import reactIcon from "../images/icons/react.png";
+import firebaseIcon from "../images/icons/fire.png";
+import gitIcon from "../images/icons/git.png";
+import jqueryIcon from "../images/icons/jquery.png";
+import sassIcon from "../images/icons/sass.png";
+import restIcon from "../images/icons/api.png";
+import responsiveIcon from "../images/icons/cross-platform.png";
 
 function About() {
   return (
@@ -32,54 +42,54 @@ function About() {
           learn new technologies and stay up to date with industry trends.
         </motion.p>
         <div className="skills-background">
-          <motion.h3
+          <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
             className="skills-heading"
           >
             My Skills
-          </motion.h3>
+          </motion.h2>
 
           <div className="skills">
             <div className="skill">
-              <img src="path/to/html-icon.png" alt="" />
-              <span>HTML</span>
+              <img src={htmlIcon} alt="" />
+              <span>HTML5</span>
             </div>
             <div className="skill">
-              <img src="path/to/css-icon.png" alt="" />
-              <span>CSS</span>
+              <img src={cssIcon} alt="" />
+              <span>CSS3</span>
             </div>
             <div className="skill">
-              <img src="path/to/js-icon.png" alt="" />
-              <span>JavaScript</span>
+              <img src={javascriptIcon} alt="" />
+              <span>JavaScript (ES6+)</span>
             </div>
             <div className="skill">
-              <img src="path/to/react-icon.png" alt="" />
+              <img src={reactIcon} alt="" />
               <span>React</span>
             </div>
             <div className="skill">
-              <img src="path/to/firebase-icon.png" alt="" />
+              <img src={firebaseIcon} alt="" />
               <span>Firebase</span>
             </div>
             <div className="skill">
-              <img src="path/to/git-icon.png" alt="" />
+              <img src={gitIcon} alt="" />
               <span>Git</span>
             </div>
             <div className="skill">
-              <img src="path/to/jquery-icon.png" alt="" />
+              <img src={jqueryIcon} alt="" />
               <span>jQuery</span>
             </div>
             <div className="skill">
-              <img src="path/to/sass-icon.png" alt="" />
+              <img src={sassIcon} alt="" />
               <span>Sass</span>
             </div>
             <div className="skill">
-              <img src="path/to/restapi-icon.png" alt="" />
+              <img src={restIcon} alt="" />
               <span>REST API</span>
             </div>
             <div className="skill">
-              <img src="path/to/responsive-icon.png" alt="" />
+              <img src={responsiveIcon} alt="" />
               <span>Responsive Design</span>
             </div>
           </div>
