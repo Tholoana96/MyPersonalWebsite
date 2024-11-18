@@ -1,5 +1,5 @@
 .projects {
-  padding: 50px;
+  padding: 50px 5%;
   text-align: center;
   color: white;
 }
@@ -99,6 +99,19 @@
 }
 
 @media (max-width: 768px) {
+  .projects {
+    padding: 40px 3%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .project-card {
+    height: 180px;
+  }
+
   .project-image {
     height: 180px;
   }
@@ -106,14 +119,41 @@
   .modal-image {
     max-height: 250px;
   }
+
+  .modal-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
+  .projects {
+    padding: 30px 2%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .project-card {
+    height: 150px;
+  }
+
   .project-image {
     height: 150px;
   }
 
   .modal-image {
     max-height: 200px;
+  }
+
+  .modal-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .close-btn {
+    font-size: 35px;
   }
 }

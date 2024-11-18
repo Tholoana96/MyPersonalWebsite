@@ -8,9 +8,7 @@
   color: white;
   text-align: center;
   background: url("../images/Tholoana.jpg") no-repeat center center;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
   z-index: 2;
 }
@@ -31,7 +29,7 @@
 }
 
 .hero-title {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .highlight {
@@ -40,7 +38,7 @@
 }
 
 .hero-subtitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 10px;
 }
 
@@ -157,5 +155,35 @@
   100% {
     transform: translateX(100vw) translateY(100vh) rotate(45deg);
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

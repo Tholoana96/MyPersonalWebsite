@@ -4,16 +4,16 @@
   color: white;
   text-align: center;
   overflow: hidden;
-  display: flex; /* Ensures flex layout */
-  flex-direction: column; /* Arranges content vertically */
-  align-items: center; /* Centers content horizontally */
-  justify-content: center; /* Centers content vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-me .content {
   z-index: 1;
   margin: 0 auto;
-  text-align: center; /* Centers the text */
+  text-align: center;
 }
 
 .about-me p {
