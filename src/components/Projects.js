@@ -7,39 +7,40 @@ import recipeImg from "../images/recipe.png";
 import gameImg from "../images/game.png";
 import musicImg from "../images/music.png";
 import commerceImg from "../images/commerce.png";
+import clockImg from "../images/clock.webp";
 
 const projects = [
   {
     id: 1,
-    title: "Project One",
+    title: "Slicehub",
     image: pizzaImg,
     description: "This is a description of project one.",
-    liveDemo: "https://live-demo-link1.com",
-    code: "https://github.com/example/project-one",
+    liveDemo: "https://slicehub-tholoana.netlify.app",
+    code: "https://github.com/Tholoana96/Slicehub",
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "Letter Leap",
     image: learnImg,
     description: "This is a description of project two.",
-    liveDemo: "https://live-demo-link2.com",
-    code: "https://github.com/example/project-two",
+    liveDemo: "https://nomcebo1992.github.io/Letter_Leap/",
+    code: "https://github.com/Nomcebo1992/Letter_Leap",
   },
   {
     id: 3,
-    title: "Project Three",
+    title: "Weather App",
     image: weatherImg,
     description: "This is a description of project three.",
-    liveDemo: "https://live-demo-link3.com",
-    code: "https://github.com/example/project-three",
+    liveDemo: "https://tholoana-weather.netlify.app",
+    code: "https://github.com/Tholoana96/My_Weather_App",
   },
   {
     id: 4,
-    title: "Project Four",
+    title: "Recipe Generator",
     image: recipeImg,
     description: "This is a description of project four.",
-    liveDemo: "https://live-demo-link4.com",
-    code: "https://github.com/example/project-four",
+    liveDemo: "https://myrecipe-generator.netlify.app",
+    code: "https://github.com/Tholoana96/recipe-generator",
   },
   {
     id: 5,
@@ -64,6 +65,14 @@ const projects = [
     description: "This is a description of project seven.",
     liveDemo: "https://live-demo-link7.com",
     code: "https://github.com/example/project-seven",
+  },
+  {
+    id: 8,
+    title: "World Clock",
+    image: clockImg,
+    description: "This is a description of project seven.",
+    liveDemo: "https://tholoana-world-clock.netlify.app",
+    code: "https://github.com/Tholoana96/World-Clock",
   },
 ];
 
