@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Projects.css";
-import pizzaImg from "../images/pizza.png";
-import learnImg from "../images/learn.png";
-import weatherImg from "../images/weather.png";
-import recipeImg from "../images/recipe.png";
-import gameImg from "../images/game.png";
-import musicImg from "../images/music.png";
-import commerceImg from "../images/commerce.png";
+import pizzaImg from "../images/pizza.jpg";
+import learnImg from "../images/learn.jpg";
+import weatherImg from "../images/weather.jpg";
+import recipeImg from "../images/recipe.jpg";
+import gameImg from "../images/game.jpg";
+import musicImg from "../images/music.jpg";
+import commerceImg from "../images/commerce.jpg";
 import clockImg from "../images/clock.webp";
 
 const projects = [
@@ -14,7 +14,8 @@ const projects = [
     id: 1,
     title: "Slicehub",
     image: pizzaImg,
-    description: "This is a description of project one.",
+    description:
+      "A pizza ordering application that allows users to customize their pizzas, choose from a menu of delicious options, and place orders conveniently. The app streamlines the ordering process with an intuitive interface.",
     liveDemo: "https://slicehub-tholoana.netlify.app",
     code: "https://github.com/Tholoana96/Slicehub",
   },
@@ -22,7 +23,8 @@ const projects = [
     id: 2,
     title: "Letter Leap",
     image: learnImg,
-    description: "This is a description of project two.",
+    description:
+      " A collaborative project focused on creating an engaging, interactive alphabet learning application. The app combines learning alphabets with animations to make learning enjoyable.",
     liveDemo: "https://nomcebo1992.github.io/Letter_Leap/",
     code: "https://github.com/Nomcebo1992/Letter_Leap",
   },
@@ -30,7 +32,8 @@ const projects = [
     id: 3,
     title: "Weather App",
     image: weatherImg,
-    description: "This is a description of project three.",
+    description:
+      "A user-friendly weather application that delivers accurate real-time weather updates, leveraging a simple and clean interface for ease of use.",
     liveDemo: "https://tholoana-weather.netlify.app",
     code: "https://github.com/Tholoana96/My_Weather_App",
   },
@@ -38,39 +41,44 @@ const projects = [
     id: 4,
     title: "Recipe Generator",
     image: recipeImg,
-    description: "This is a description of project four.",
+    description:
+      "An interactive application that generates random recipes based on user-selected ingredients, making cooking more creative and fun.",
     liveDemo: "https://myrecipe-generator.netlify.app",
     code: "https://github.com/Tholoana96/recipe-generator",
   },
   {
     id: 5,
-    title: "Project Five",
+    title: "Rocket Blast",
     image: gameImg,
-    description: "This is a description of project five.",
+    description:
+      "An arcade-style game where players dodge asteroids with a rocket, showcasing interactive gameplay and responsive design using jQuery and HTML5 Canvas.",
     liveDemo: "https://live-demo-link5.com",
-    code: "https://github.com/example/project-five",
+    code: "https://github.com/Tholoana96/RocketBlast",
   },
   {
     id: 6,
-    title: "Project Six",
+    title: "TuneScout",
     image: musicImg,
-    description: "This is a description of project six.",
+    description:
+      " A music discovery app that lets users explore the top songs of the day, search for their favorite tracks, and listen to song previews using the Last.fm API.",
     liveDemo: "https://live-demo-link6.com",
-    code: "https://github.com/example/project-six",
+    code: "https://github.com/Tholoana96/TuneScout",
   },
   {
     id: 7,
-    title: "Project Seven",
+    title: "Pinspired",
     image: commerceImg,
-    description: "This is a description of project seven.",
+    description:
+      "An e-commerce platform where users can explore and purchase unique pins and patches. Built with React and Firebase, it offers a seamless browsing and checkout experience with real-time inventory tracking.",
     liveDemo: "https://live-demo-link7.com",
-    code: "https://github.com/example/project-seven",
+    code: "https://github.com/Tholoana96/Pinspired",
   },
   {
     id: 8,
     title: "World Clock",
     image: clockImg,
-    description: "This is a description of project seven.",
+    description:
+      "A world clock application that allows users to track time across multiple time zones in real-time. It provides an intuitive interface for effortless time management globally.",
     liveDemo: "https://tholoana-world-clock.netlify.app",
     code: "https://github.com/Tholoana96/World-Clock",
   },
