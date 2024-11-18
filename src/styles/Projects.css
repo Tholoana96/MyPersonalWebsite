@@ -1,7 +1,6 @@
 .projects {
   padding: 50px;
   text-align: center;
-  background-color: #121212;
   color: white;
 }
 
@@ -48,6 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .project-modal-content {
@@ -58,6 +58,7 @@
   max-width: 500px;
   width: 90%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .modal-image {
@@ -83,5 +84,41 @@
 }
 
 .modal-link:hover {
-  background: #ffaf7b;
+  background: #bf4650;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #d76d77;
+}
+
+@media (max-width: 768px) {
+  .project-image {
+    height: 180px;
+  }
+
+  .modal-image {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    height: 150px;
+  }
+
+  .modal-image {
+    max-height: 200px;
+  }
 }

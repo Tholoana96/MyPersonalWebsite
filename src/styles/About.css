@@ -6,16 +6,6 @@
   overflow: hidden;
 }
 
-.about-me .background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
-
 .about-me .content {
   z-index: 1;
   max-width: 900px;
@@ -40,11 +30,15 @@
   margin: 20px 0;
 }
 
+.about-me .skills-background {
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .about-me .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .skill {
@@ -74,4 +68,38 @@
 
 .about-me .content {
   animation: fadeIn 1.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .about-me h2 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  .about-me .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-me p {
+    font-size: 0.9rem;
+  }
+
+  .skill img {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -87,6 +87,10 @@ const projects = [
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section id="projects" className="projects">
       <h2 className="section-title">My Projects</h2>
@@ -97,17 +101,28 @@ function Projects() {
             className="project-card"
             onClick={() => setSelectedProject(project)}
           >
-            <img src={project.image} className="project-image" alt="" />
+            <img
+              src={project.image}
+              className="project-image"
+              alt={project.title}
+            />
           </div>
         ))}
       </div>
       {selectedProject && (
-        <div className="project-modal" onClick={() => setSelectedProject(null)}>
+        <div className="project-modal" onClick={closeModal}>
           <div
             className="project-modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={selectedProject.image} className="modal-image" alt="" />
+            <button className="close-btn" onClick={closeModal}>
+              &times;
+            </button>
+            <img
+              src={selectedProject.image}
+              className="modal-image"
+              alt={selectedProject.title}
+            />
             <h3>{selectedProject.title}</h3>
             <p>{selectedProject.description}</p>
             <div className="modal-links">
