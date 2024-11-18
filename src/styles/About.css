@@ -4,30 +4,44 @@
   color: white;
   text-align: center;
   overflow: hidden;
+  display: flex; /* Ensures flex layout */
+  flex-direction: column; /* Arranges content vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
 }
 
 .about-me .content {
   z-index: 1;
-  max-width: 900px;
   margin: 0 auto;
+  text-align: center; /* Centers the text */
 }
 
 .about-me p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.8;
   margin: 20px 0;
 }
 
 .about-me .skills-background {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Ensures the background is centered */
 }
 
 .about-me .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
   gap: 70px;
+  width: 100%; /* Ensures the container fills available space */
+  max-width: 900px; /* Restricts width */
+  margin: 0 auto; /* Centers the container horizontally */
 }
 
 .skill {
@@ -41,6 +55,7 @@
 .skill img {
   width: 60px;
   height: 60px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 

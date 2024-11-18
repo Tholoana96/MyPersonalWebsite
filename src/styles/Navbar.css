@@ -5,7 +5,8 @@
   justify-content: right;
   padding: 10px 40px;
   z-index: 100;
-  font-size: 30px;
+  font-size: 2.2rem;
+  transition: top 0.3s ease;
 }
 
 .navbar ul {
@@ -21,4 +22,8 @@
 
 .navbar li:hover {
   color: #d76d77;
+}
+
+.navbar-hidden {
+  top: -100px;
 }
