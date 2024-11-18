@@ -8,7 +8,9 @@
   color: white;
   text-align: center;
   background: url("../images/Tholoana.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   height: 80vh;
   z-index: 2;
 }

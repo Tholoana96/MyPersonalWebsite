@@ -7,9 +7,10 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const heroSection = document.querySelector(".hero");
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition > 500) {
+      if (scrollPosition > heroSection.offsetHeight) {
         setIsNavbarVisible(false);
       } else {
         setIsNavbarVisible(true);

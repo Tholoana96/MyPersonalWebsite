@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .about-me .content {
@@ -30,18 +31,18 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Ensures the background is centered */
+  margin: 0 auto;
 }
 
 .about-me .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers the items horizontally */
-  align-items: center; /* Centers the items vertically */
+  justify-content: center;
+  align-items: center;
   gap: 70px;
-  width: 100%; /* Ensures the container fills available space */
-  max-width: 900px; /* Restricts width */
-  margin: 0 auto; /* Centers the container horizontally */
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .skill {
@@ -50,13 +51,15 @@
   align-items: center;
   font-size: 1.5rem;
   margin: 10px;
+  opacity: 1;
 }
 
 .skill img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   margin-top: 10px;
   margin-bottom: 10px;
+  object-fit: contain;
 }
 
 @keyframes fadeIn {
@@ -103,7 +106,7 @@
   }
 
   .skill img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
