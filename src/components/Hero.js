@@ -6,6 +6,16 @@ import "../styles/Hero.css";
 function Hero() {
   return (
     <section id="hero" className="hero">
+      <div className="star-container">
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+        <div className="shooting-star"></div>
+      </div>
       <motion.div
         className="text-content"
         initial={{ opacity: 0, x: -100 }}
@@ -28,7 +38,6 @@ function Hero() {
         >
           A Passionate Frontend Developer
         </motion.p>
-        {/* Link to scroll to the projects section */}
         <Link to="projects" smooth={true} duration={1000}>
           <motion.button
             className="cta"
@@ -39,13 +48,6 @@ function Hero() {
           </motion.button>
         </Link>
       </motion.div>
-
-      <div className="abstract-shapes">
-        <div className="shape shape-1"></div>
-        <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
-        <div className="shape shape-4"></div>
-      </div>
     </section>
   );
 }
